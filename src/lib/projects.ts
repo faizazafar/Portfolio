@@ -15,6 +15,35 @@ export type Project = {
 
 export const PROJECTS: Project[] = [
   {
+    id: 9, title: "Generative AI Workflow Platform", category: "AI / SaaS", period: "Web", award: false,
+    tagline: "Node-based editor for building AI workflows, running them on real models and sharing them via credit-gated links.",
+    stack: "Next.js · TypeScript · Prisma",
+    bullets: [
+      "Built a full-stack platform with a drag-and-drop React Flow editor featuring typed connections, undo/redo, autosave and import/export.",
+      "Designed a 100-node catalog and connected 11 nodes to real models (fal.ai, OpenRouter) through one server-side execution layer.",
+      "Implemented Stripe subscriptions, a double-entry-style credit ledger and per-run cost tracking, with atomic credit reservation and refunds on failure.",
+      "Built shareable workflows with admin-approved credit requests, plus a separate role-based admin console with audit log and margin analytics.",
+    ],
+    tags: ["Next.js 16", "React Flow", "Stripe", "Prisma", "fal.ai"],
+    links: [{ label: "Website", url: "https://generative-ai-omil.vercel.app" }],
+  },
+  {
+    id: 8, title: "waQt", category: "Productivity", period: "iOS · Android", award: false,
+    tagline: "School planner for students and parents with a timetable, reminders and an AI chat assistant.",
+    stack: "React Native · Expo · Firebase",
+    bullets: [
+      "Redesigned navigation around a custom 5-tab floating bar and built a reusable UI kit (filters, loaders, empty and error states) shared across list screens.",
+      "Implemented class editing with staged changes and server-side clash detection, plus efficient per-user reminder and activity queries on a Node.js/Express backend.",
+      "Integrated a Gemini-based AI assistant with tool calling into the add-class, assignment, reminder and activity flows.",
+      "Fixed Android-specific issues (blank lists, repeated notification navigation, shadow differences) to keep iOS and Android consistent.",
+    ],
+    tags: ["React Native", "Expo", "Firebase", "AI assistant", "TypeScript"],
+    links: [
+      { label: "App Store", url: "https://apps.apple.com/us/app/waqt-time-management/id6756526261" },
+      { label: "Google Play", url: "https://play.google.com/store/apps/details?id=com.ernesteshun.waqt&pli=1" },
+    ],
+  },
+  {
     id: 1, title: "Cycle Vita PKU", category: "Healthcare", period: "Jun 2025 – Present", award: true,
     tagline: "AI-powered diet management for the PKU community — Best Nutrition Mobile App winner.",
     stack: "React Native",

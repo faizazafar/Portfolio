@@ -2,8 +2,9 @@
 
 import { motion, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import { PROJECTS } from "@/lib/projects";
 
-const TARGETS = { years: 4.5, apps: 7, downloads: 500, awards: 1 };
+const TARGETS = { years: 4.5, apps: PROJECTS.length, downloads: 500, awards: 1 };
 const ease = (t: number) => 1 - Math.pow(1 - t, 3);
 
 export default function StatsBar() {

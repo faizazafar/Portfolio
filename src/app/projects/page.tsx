@@ -16,7 +16,7 @@ export default function ProjectsPage() {
           Selected Work
         </div>
         <h1 style={{ fontSize: "clamp(36px,4.5vw,56px)", margin: 0, maxWidth: "18ch", lineHeight: 1.08 }}>
-          Seven products, shipped across four industries.
+          Nine products, shipped across many industries.
         </h1>
       </div>
 
